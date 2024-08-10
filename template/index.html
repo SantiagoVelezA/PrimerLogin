@@ -19,6 +19,10 @@
     <div class="caja">
         
         <form class="form-control" action="acceso-login" method="post">
+            <h1>Login</h1>
+            {% if error %}
+            {{ error }}
+            {% endif %}
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="txtCorreo">
